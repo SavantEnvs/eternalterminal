@@ -1,0 +1,9 @@
+project: savantenvs/eternalterminal
+target: TerminalServerRouterFuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/TerminalServerRouterFuzzer/testsuite
+cmds:
+  - cmd: /mayhem/TerminalServerRouterFuzzer
+    libfuzzer: true
+    timeout: 10
