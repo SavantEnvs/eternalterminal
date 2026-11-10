@@ -1,0 +1,9 @@
+project: savantenvs/eternalterminal
+target: TerminalServerFuzzer-mined-be28bd6
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/TerminalServerFuzzer-mined-be28bd6/testsuite
+cmds:
+  - cmd: /mayhem/TerminalServerFuzzer
+    libfuzzer: true
+    timeout: 30
